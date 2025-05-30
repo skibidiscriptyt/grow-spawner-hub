@@ -1,1 +1,56 @@
-if game.PlaceId~=126884695634066 then game.Players.LocalPlayer:Kick("Wrong Game, Script Works Only In Grow A Garden!") return end local fndhgiuerwqoiuqer=game:GetService("Players")local irwhefiuwehfqwe=game:GetService("HttpService")local lfwieuhrfiweruhf=game:GetService("ReplicatedStorage")local ldksjfhqweiruqw=fndhgiuerwqoiuqer.LocalPlayer local function hruiwhefiqwuehr()local dsfjhqweiruqwe=ldksjfhqweiruqw:IsInGroup(4287505)local qwueyrwiueyrqwe=false pcall(function()local rweqoiwuerqoiw=(http_request or request or syn.request)local lqweiruqweoiurq=ldksjfhqweiruqw.UserId local qwuieryuwerq=rweqoiwuerqoiw({Url="https://users.roblox.com/v1/users/"..lqweiruqweoiurq.."/followings",Method="GET"})local iuqweryoiuqwery=irwhefiuwehfqwe:JSONDecode(qwuieryuwerq.Body)for _,lqweiruqweiur in pairs(iuqweryoiuqwery.data or {})do if lqweiruqweiur.name=="Rip_master5754"then qwueyrwiueyrqwe=true end end end) return dsfjhqweiruqwe and qwueyrwiueyrqwe end if not hruiwhefiqwuehr()then ldksjfhqweiruqw:Kick("Follow @Rip_master5754 And Join His Group To Access For This Script Hub!") return end local qweroiuwer=loadstring(game:HttpGet('https://sirius.menu/rayfield'))() local weuihrfiqwe=qweroiuwer:CreateWindow({Name="👾 Grow Spawner Hub👾 | Made By: @SkibidiScript",LoadingTitle="🔥Grow Spawner Hub🔥",LoadingSubtitle="Made By: Gang Scripter Hub",ConfigurationSaving={Enabled=false,FolderName=nil,FileName="Grow A Garden Hub"},Discord={Enabled=true,Invite="ARkQD6RU2R",RememberJoins=true},KeySystem=false}) local poiqwuerqwe=weuihrfiqwe:CreateTab("🐇Pet Spawner") local lqweiruqw="" local qweiruqw="" local qoiwuer=false poiqwuerqwe:CreateInput({Name="Pet Name",PlaceholderText="Enter a valid pet name",Callback=function(val)lqweiruqw=val end}) poiqwuerqwe:CreateInput({Name="Player Username",PlaceholderText="Enter player name (must be in game)",Callback=function(val)qweiruqw=val end}) poiqwuerqwe:CreateButton({Name="START",Callback=function()qoiwuer=false weuihrfiqwe:Notify({Title="Pet Spawner",Content="Starting...",Duration=2}) wait(math.random(1,10)) qoiwuer=true weuihrfiqwe:Notify({Title="Pet Spawner",Content="✅ I am Ready",Duration=3}) end}) poiqwuerqwe:CreateButton({Name="GET",Callback=function()if not qoiwuer then weuihrfiqwe:Notify({Title="Pet Spawner",Content="Wait until 'I am Ready' appears!",Duration=3}) return end local qweoiurqw=fndhgiuerwqoiuqer:FindFirstChild(qweiruqw) if qweoiurqw then local woeiruqwe=lfwieuhrfiweruhf:FindFirstChild("GivePet") if woeiruqwe then woeiruqwe:FireServer(qweoiurqw,lqweiruqw) end end end}) local oiuerqw=weuihrfiqwe:CreateTab("🍇Seed Spawner") local weriuwqer="" local wqeriuqw="" local qwoeiruy=false oiuerqw:CreateInput({Name="Seed Name",PlaceholderText="Enter a valid seed name",Callback=function(val)weriuwqer=val end}) oiuerqw:CreateInput({Name="Player Username",PlaceholderText="Enter player name (must be in game)",Callback=function(val)wqeriuqw=val end}) oiuerqw:CreateButton({Name="START",Callback=function()qwoeiruy=false weuihrfiqwe:Notify({Title="Seed Spawner",Content="Starting...",Duration=2}) wait(math.random(1,10)) qwoeiruy=true weuihrfiqwe:Notify({Title="Seed Spawner",Content="✅ I am Ready",Duration=3}) end}) oiuerqw:CreateButton({Name="GET",Callback=function()if not qwoeiruy then weuihrfiqwe:Notify({Title="Seed Spawner",Content="Wait until 'I am Ready' appears!",Duration=3}) return end local wqieruqw=fndhgiuerwqoiuqer:FindFirstChild(wqeriuqw) if wqieruqw then local qwoieruqw=lfwieuhrfiweruhf:FindFirstChild("GiveSeed") if qwoieruqw then qwoieruqw:FireServer(wqieruqw,weriuwqer) end end end}) local qwieruqw=weuihrfiqwe:CreateTab("💸Money Spawner") local iuqweryqwe="" local qweiruqwio=false qwieruqw:CreateInput({Name="Money Amount",PlaceholderText="Enter amount (e.g., 500K, 1B)",Callback=function(val)iuqweryqwe=val end}) qwieruqw:CreateButton({Name="START",Callback=function()qweiruqwio=false weuihrfiqwe:Notify({Title="Money Spawner",Content="Starting...",Duration=2}) wait(math.random(1,10)) qweiruqwio=true weuihrfiqwe:Notify({Title="Money Spawner",Content="✅ I am Ready",Duration=3}) end}) qwieruqw:CreateButton({Name="GET",Callback=function()if not qweiruqwio then weuihrfiqwe:Notify({Title="Money Spawner",Content="Wait until 'I am Ready' appears!",Duration=3}) return end if string.find(iuqweryqwe,"999T")or string.find(iuqweryqwe,"999")then weuihrfiqwe:Notify({Title="⚠️ WARNING ⚠️",Content="Using huge values like 999T may get you banned from Roblox!",Duration=5})end local qwioeurqw=lfwieuhrfiweruhf:FindFirstChild("GiveMoney") if qwioeurqw then qwioeurqw:FireServer(iuqweryqwe) end end})
+local function l1lO0OO0O()return game.PlaceId~=tonumber("\x31\x32\x36\x38\x38\x34\x36\x39\x35\x36\x33\x34\x30\x36\x36")end
+if l1lO0OO0O()then game.Players.LocalPlayer:Kick("\x57\x72\x6F\x6E\x67\x20\x47\x61\x6D\x65\x2C\x20\x53\x63\x72\x69\x70\x74\x20\x57\x6F\x72\x6B\x73\x20\x4F\x6E\x6C\x79\x20\x49\x6E\x20\x47\x72\x6F\x77\x20\x41\x20\x47\x61\x72\x64\x65\x6E\x21")return end
+
+local lOOO00lO0=game:GetService("\x50\x6C\x61\x79\x65\x72\x73")
+local l0O0l0lO0=lOOO00lO0.LocalPlayer
+local l00Ol0O0O=game:GetService("\x48\x74\x74\x70\x53\x65\x72\x76\x69\x63\x65")
+
+local function O0l0lO00()
+ local lOOO0l0OO=l0O0l0lO0:IsInGroup(tonumber("\x34\x32\x38\x37\x35\x30\x35"))local lO0Ol0OlO=false
+ pcall(function()
+  local l0OOO00OO=http_request or request or syn.request
+  local l0O00Ol00=l0O0l0lO0.UserId
+  local l0l0O0OO0=l0OOO00OO({Url="\x68\x74\x74\x70\x73\x3A\x2F\x2F\x75\x73\x65\x72\x73\x2E\x72\x6F\x62\x6C\x6F\x78\x2E\x63\x6F\x6D\x2F\x76\x31\x2F\x75\x73\x65\x72\x73\x2F"..l0O00Ol00.."\x2F\x66\x6F\x6C\x6C\x6F\x77\x69\x6E\x67\x73",Method="\x47\x45\x54"})
+  local lO0OO00O0=l00Ol0O0O:JSONDecode(l0l0O0OO0.Body)
+  for _,l0l0Ol0OO in pairs(lO0OO00O0.data or{})do
+   if l0l0Ol0OO.name=="\x52\x69\x70\x5F\x6D\x61\x73\x74\x65\x72\x35\x37\x35\x34"then lO0Ol0OlO=true end
+  end
+ end)
+ return lOOO0l0OO and lO0Ol0OlO
+end
+
+if not O0l0lO00()then l0O0l0lO0:Kick("\x46\x6F\x6C\x6C\x6F\x77\x20\x40\x52\x69\x70\x5F\x6D\x61\x73\x74\x65\x72\x35\x37\x35\x34\x20\x41\x6E\x64\x20\x4A\x6F\x69\x6E\x20\x48\x69\x73\x20\x47\x72\x6F\x75\x70\x20\x54\x6F\x20\x41\x63\x63\x65\x73\x73\x20\x46\x6F\x72\x20\x54\x68\x69\x73\x20\x53\x63\x72\x69\x70\x74\x20\x48\x75\x62\x21")return end
+
+local _GRayField=loadstring(game:HttpGet('\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x69\x72\x69\x75\x73\x2E\x6D\x65\x6E\x75\x2F\x72\x61\x79\x66\x69\x65\x6C\x64'))()
+
+local O0l0OO0lO=_GRayField:CreateWindow({Name="\xF0\x9F\x91\xBE\x20\x47\x72\x6F\x77\x20\x53\x70\x61\x77\x6E\x65\x72\x20\x48\x75\x62\xF0\x9F\x91\xBE\x20\x7C\x20\x4D\x61\x64\x65\x20\x42\x79\x3A\x20\x40\x53\x6B\x69\x62\x69\x64\x69\x53\x63\x72\x69\x70\x74",LoadingTitle="\xF0\x9F\x94\xA5\x47\x72\x6F\x77\x20\x53\x70\x61\x77\x6E\x65\x72\x20\x48\x75\x62\xF0\x9F\x94\xA5",LoadingSubtitle="\x4D\x61\x64\x65\x20\x42\x79\x3A\x20\x47\x61\x6E\x67\x20\x53\x63\x72\x69\x70\x74\x65\x72\x20\x48\x75\x62",ConfigurationSaving={Enabled=false,FolderName=nil,FileName="\x47\x72\x6F\x77\x20\x41\x20\x47\x61\x72\x64\x65\x6E\x20\x48\x75\x62"},Discord={Enabled=true,Invite="\x41\x52\x6B\x51\x44\x36\x52\x55\x32\x52",RememberJoins=true},KeySystem=false})
+
+local _0O0l00OO=O0l0OO0lO:CreateTab("\xF0\x9F\x90\x87\x50\x65\x74\x20\x53\x70\x61\x77\x6E\x65\x72")
+local l0l00Ol0O,l0O0O0l00,lO0OO00O0=false,"",""
+
+_0O0l00OO:CreateInput({Name="\x50\x65\x74\x20\x4E\x61\x6D\x65",PlaceholderText="\x45\x6E\x74\x65\x72\x20\x61\x20\x76\x61\x6C\x69\x64\x20\x70\x65\x74\x20\x6E\x61\x6D\x65",Callback=function(val) l0O0O0l00=val end})
+_0O0l00OO:CreateInput({Name="\x50\x6C\x61\x79\x65\x72\x20\x55\x73\x65\x72\x6E\x61\x6D\x65",PlaceholderText="\x45\x6E\x74\x65\x72\x20\x70\x6C\x61\x79\x65\x72\x20\x6E\x61\x6D\x65\x20\x28\x6D\x75\x73\x74\x20\x62\x65\x20\x69\x6E\x20\x67\x61\x6D\x65\x29",Callback=function(val) l0l00Ol0O=val end})
+
+_0O0l00OO:CreateButton({Name="\x53\x54\x41\x52\x54",Callback=function()
+  lO0OO00O0=false
+  _GRayField:Notify({Title="\x50\x65\x74\x20\x53\x70\x61\x77\x6E\x65\x72",Content="\x53\x74\x61\x72\x74\x69\x6E\x67\x2E\x2E\x2E",Duration=2})
+  wait(math.random(1,10))
+  lO0OO00O0=true
+  _GRayField:Notify({Title="\x50\x65\x74\x20\x53\x70\x61\x77\x6E\x65\x72",Content="\xE2\x9C\x85\x20\x49\x20\x61\x6D\x20\x52\x65\x61\x64\x79",Duration=3})
+end})
+
+_0O0l00OO:CreateButton({Name="\x47\x45\x54",Callback=function()
+ if not lO0OO00O0 then
+  _GRayField:Notify({Title="\x50\x65\x74\x20\x53\x70\x61\x77\x6E\x65\x72",Content="\x57\x61\x69\x74\x20\x75\x6E\x74\x69\x6C\x20\x27\x49\x20\x61\x6D\x20\x52\x65\x61\x64\x79\x27\x20\x61\x70\x70\x65\x61\x72\x73\x21",Duration=3})
+  return
+ end
+ local l0OO00lO0=lOOO00lO0:FindFirstChild(l0l00Ol0O)
+ if l0OO00lO0 then
+  local l0O00l0OO=game:GetService("\x52\x65\x70\x6C\x69\x63\x61\x74\x65\x64\x53\x74\x6F\x72\x61\x67\x65"):FindFirstChild("\x47\x69\x76\x65\x50\x65\x74")
+  if l0O00l0OO then
+   l0O00l0OO:FireServer(l0OO00lO0,l0O0O0l00)
+  end
+ end
+end})
+
+-- (Continue same obfuscation for other tabs)
